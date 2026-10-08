@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MONEY &amp; PEOPLE — BUSINESS</title>
+<link rel="stylesheet" href="mp.css">
+</head>
+<body>
+<div class="pagebar"><a href="index.html" class="cur" aria-current="page">MONEY &amp; PEOPLE</a><a href="hub.html">COMMAND HUB</a><a href="prep.html">IRON PREP</a></div>
+<div class="masthead">
+  <div class="stampline">
+    <span>FILE: <b>MONEY &amp; PEOPLE — OPERATING SYSTEM</b></span>
+    <span>STATUS: <b id="statusLine">ACTIVE</b></span>
+  </div>
+  <h1>Money <em>&amp;</em> People</h1>
+  <p>A working manual for two skills nobody teaches you directly: how money actually moves, and how people actually think. Same discipline you bring to training — applied to cash flow and communication. Track it, drill it, review it weekly.</p>
+</div>
+<nav id="nav"><a class="tabl" href="index.html">DASHBOARD</a><a class="tabl" href="mp-money.html">MONEY</a><a class="tabl" href="mp-people.html">PEOPLE</a><a class="tabl cur" href="mp-business.html">BUSINESS</a><a class="tabl" href="mp-drills.html">DAILY DRILLS</a><a class="tabl" href="mp-log.html">AFTER-ACTION LOG</a><a class="tabl" href="mp-manual.html">FIELD MANUAL</a><a class="tabl" href="mp-data.html">DATA</a></nav>
+<main>
+<section id="business" class="tab active">
+  <span class="section-tag">BUSINESS &amp; CAREER LAB</span>
+  <h2>Turning skills into income</h2>
+  <p class="lede">Web dev, SEO, content, and social media aren't separate hustles — they're one stack. Stop selling tasks. Start selling outcomes.</p>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Your current skill stack</h3>
+      <p style="font-family:var(--mono); font-size:12px; color:var(--paper-dim); line-height:2">
+        web development → SEO → lead generation → social media → content → client comms → sales → systems
+      </p>
+    </div>
+    <div class="card">
+      <h3>Reframe the pitch</h3>
+      <p><s style="color:var(--paper-dim)">"I build websites."</s></p>
+      <p><b>"I help local businesses turn their online presence into actual enquiries."</b></p>
+    </div>
+    <div class="card">
+      <h3>Offer architecture</h3>
+      <ol class="steps">
+        <li>Pick a niche.</li>
+        <li>Name the painful problem.</li>
+        <li>Define one measurable outcome.</li>
+        <li>Build a simple offer around it.</li>
+        <li>Generate leads on purpose.</li>
+        <li>Close honestly. Deliver. Collect proof.</li>
+        <li>Turn the whole thing into a repeatable checklist.</li>
+      </ol>
+    </div>
+    <div class="card">
+      <h3>Client discovery questions</h3>
+      <ul class="list">
+        <li>What are you doing now?</li>
+        <li>What isn't working?</li>
+        <li>What does that actually cost you?</li>
+        <li>What would success look like?</li>
+        <li>Why deal with it now?</li>
+        <li>What have you already tried?</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="callout">A polished site with no traffic and no offer is a project, not a business. A rough page that reliably produces qualified leads is a business asset. Don't confuse the two.</div>
+
+  <h3 style="font-family:var(--serif); font-size:18px; margin-bottom:14px">The flywheel</h3>
+  <p style="font-family:var(--mono); font-size:13px; color:var(--olive-bright); line-height:2">
+    learn a skill → use it → create proof → communicate the proof → get paid → reinvest → build systems → increase leverage → repeat
+  </p>
+
+  <div class="divider"></div>
+
+  <h3 style="font-family:var(--serif); font-size:18px; margin-bottom:14px">One-sentence offer builder</h3>
+  <p class="lede" style="margin-bottom:16px">Fill the blanks. If you can't fill all four in plain words, the offer isn't ready to pitch yet.</p>
+  <div class="card" style="max-width:640px">
+    <label class="field-label">WHO — the specific type of client</label>
+    <input type="text" id="offerWho" placeholder="e.g. small cleaning businesses in Wicklow">
+    <label class="field-label">PROBLEM — the painful thing they're dealing with</label>
+    <input type="text" id="offerProblem" placeholder="e.g. no website, invisible on Google">
+    <label class="field-label">OUTCOME — the measurable result you deliver</label>
+    <input type="text" id="offerOutcome" placeholder="e.g. a site that generates real enquiries">
+    <label class="field-label">PROOF — why they should believe you</label>
+    <input type="text" id="offerProof" placeholder="e.g. built X's site, ranked page 1 in 6 weeks">
+    <button class="action ghost" id="offerBuild">BUILD IT</button>
+    <div id="offerResult" style="margin-top:14px; font-family:var(--serif); font-size:15px; color:var(--paper); font-style:italic"></div>
+  </div>
+</section>
+</main>
+
+
+<script src="mp.js"></script>
+</body>
+</html>

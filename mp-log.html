@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MONEY &amp; PEOPLE — AFTER-ACTION LOG</title>
+<link rel="stylesheet" href="mp.css">
+</head>
+<body>
+<div class="pagebar"><a href="index.html" class="cur" aria-current="page">MONEY &amp; PEOPLE</a><a href="hub.html">COMMAND HUB</a><a href="prep.html">IRON PREP</a></div>
+<div class="masthead">
+  <div class="stampline">
+    <span>FILE: <b>MONEY &amp; PEOPLE — OPERATING SYSTEM</b></span>
+    <span>STATUS: <b id="statusLine">ACTIVE</b></span>
+  </div>
+  <h1>Money <em>&amp;</em> People</h1>
+  <p>A working manual for two skills nobody teaches you directly: how money actually moves, and how people actually think. Same discipline you bring to training — applied to cash flow and communication. Track it, drill it, review it weekly.</p>
+</div>
+<nav id="nav"><a class="tabl" href="index.html">DASHBOARD</a><a class="tabl" href="mp-money.html">MONEY</a><a class="tabl" href="mp-people.html">PEOPLE</a><a class="tabl" href="mp-business.html">BUSINESS</a><a class="tabl" href="mp-drills.html">DAILY DRILLS</a><a class="tabl cur" href="mp-log.html">AFTER-ACTION LOG</a><a class="tabl" href="mp-manual.html">FIELD MANUAL</a><a class="tabl" href="mp-data.html">DATA</a></nav>
+<main>
+<section id="log" class="tab active">
+  <span class="section-tag">AFTER-ACTION LOG</span>
+  <h2>Decision journal</h2>
+  <p class="lede">Write it down before you act, not after. Entries save automatically to this device.</p>
+
+  <div class="two">
+    <div class="card">
+      <h3>Money decision</h3>
+      <label class="field-label">WHAT ARE YOU CONSIDERING?</label>
+      <textarea id="moneyDecision" placeholder="e.g. considering a €400 purchase / a new savings split / a client price"></textarea>
+      <label class="field-label">WHY — AND WHAT'S THE ALTERNATIVE?</label>
+      <textarea id="moneyReason" placeholder="Run it through the spend filter or the invest filter"></textarea>
+      <button class="action" data-log="money">LOG ENTRY</button><span class="save-note" id="moneyNote">LOGGED</span>
+    </div>
+    <div class="card">
+      <h3>People / conversation</h3>
+      <label class="field-label">WHAT HAPPENED OR IS COMING UP?</label>
+      <textarea id="peopleDecision" placeholder="e.g. a disagreement, a client call, a hard conversation"></textarea>
+      <label class="field-label">WHAT DID THEY WANT? WHAT DID YOU ASSUME?</label>
+      <textarea id="peopleReason" placeholder="Separate fact from interpretation"></textarea>
+      <button class="action" data-log="people">LOG ENTRY</button><span class="save-note" id="peopleNote">LOGGED</span>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <h3 style="font-family:var(--serif); font-size:18px">Weekly review</h3>
+  <p class="lede" style="margin-bottom:10px">One win. One mistake. One lesson. One people skill to drill. One money move. One business move. Saving adds a new dated entry — past reviews stay below so you can track how your thinking changes.</p>
+  <textarea id="weeklyReview" placeholder="Write your weekly review here..."></textarea>
+  <button class="action" id="saveWeekly">SAVE AS NEW WEEKLY ENTRY</button><span class="save-note" id="weeklyNote">SAVED</span>
+
+  <div id="weeklyEntries" style="margin-top:20px"></div>
+
+  <div class="divider"></div>
+
+  <h3 style="font-family:var(--serif); font-size:18px">Entries</h3>
+  <div class="tag-row" style="margin-bottom:14px">
+    <span class="chip btn active" data-filter="all">ALL</span>
+    <span class="chip btn" data-filter="money">MONEY</span>
+    <span class="chip btn" data-filter="people">PEOPLE</span>
+  </div>
+  <div id="logEntries"><p class="muted">No entries yet.</p></div>
+</section>
+</main>
+
+
+<script src="mp.js"></script>
+</body>
+</html>

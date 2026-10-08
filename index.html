@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MONEY &amp; PEOPLE — DASHBOARD</title>
+<link rel="stylesheet" href="mp.css">
+</head>
+<body>
+<div class="pagebar"><a href="index.html" class="cur" aria-current="page">MONEY &amp; PEOPLE</a><a href="hub.html">COMMAND HUB</a><a href="prep.html">IRON PREP</a></div>
+<div class="masthead">
+  <div class="stampline">
+    <span>FILE: <b>MONEY &amp; PEOPLE — OPERATING SYSTEM</b></span>
+    <span>STATUS: <b id="statusLine">ACTIVE</b></span>
+  </div>
+  <h1>Money <em>&amp;</em> People</h1>
+  <p>A working manual for two skills nobody teaches you directly: how money actually moves, and how people actually think. Same discipline you bring to training — applied to cash flow and communication. Track it, drill it, review it weekly.</p>
+</div>
+<nav id="nav"><a class="tabl cur" href="index.html">DASHBOARD</a><a class="tabl" href="mp-money.html">MONEY</a><a class="tabl" href="mp-people.html">PEOPLE</a><a class="tabl" href="mp-business.html">BUSINESS</a><a class="tabl" href="mp-drills.html">DAILY DRILLS</a><a class="tabl" href="mp-log.html">AFTER-ACTION LOG</a><a class="tabl" href="mp-manual.html">FIELD MANUAL</a><a class="tabl" href="mp-data.html">DATA</a></nav>
+<main>
+<section id="dashboard" class="tab active">
+  <span class="section-tag">OVERVIEW</span>
+  <h2>Current standing</h2>
+  <p class="lede">Four tracks, one operator. XP moves when you actually do the drill — not when you read about it. Levels are earned per track, not guessed from a formula.</p>
+
+  <h3 class="dash-subhead">Progress</h3>
+  <div class="hero-row">
+    <div class="card hero-card">
+      <div class="stat-label">TOTAL XP EARNED</div>
+      <div class="stat-num hero-num" id="xpTotal">0</div>
+      <div class="meter"><div class="meter-fill" id="xpMeter"></div></div>
+    </div>
+    <div class="card mini-stats">
+      <div class="mini-stat">
+        <span class="mini-label">DAYS ON THE SYSTEM</span>
+        <span class="mini-num" id="daysActive">1</span>
+      </div>
+      <div class="mini-stat">
+        <span class="mini-label">CURRENT STREAK</span>
+        <span class="mini-num" id="streakCurrent">0</span>
+      </div>
+      <div class="mini-stat">
+        <span class="mini-label">BEST STREAK</span>
+        <span class="mini-num" id="streakBest">0</span>
+      </div>
+    </div>
+  </div>
+
+  <h3 class="dash-subhead">Track levels</h3>
+  <div class="grid">
+    <div class="card">
+      <div class="stat-num" id="moneyLvl">1</div>
+      <div class="stat-label">MONEY — earn / keep / deploy</div>
+      <div class="meter"><div class="meter-fill" id="moneyMeter"></div></div>
+    </div>
+    <div class="card">
+      <div class="stat-num" id="peopleLvl">1</div>
+      <div class="stat-label">PEOPLE — listen / read / communicate</div>
+      <div class="meter"><div class="meter-fill" id="peopleMeter"></div></div>
+    </div>
+    <div class="card">
+      <div class="stat-num" id="bizLvl">1</div>
+      <div class="stat-label">BUSINESS — offer / sell / systemise</div>
+      <div class="meter"><div class="meter-fill" id="bizMeter"></div></div>
+    </div>
+    <div class="card">
+      <div class="stat-num" id="discLvl">1</div>
+      <div class="stat-label">DISCIPLINE — showing up / review</div>
+      <div class="meter"><div class="meter-fill" id="discMeter"></div></div>
+    </div>
+  </div>
+
+  <h3 class="dash-subhead">Activity</h3>
+  <div class="grid">
+    <div class="card">
+      <div class="stat-num" id="drillsDoneToday">0</div>
+      <div class="stat-label">DRILLS DONE TODAY</div>
+    </div>
+    <div class="card">
+      <div class="stat-num" id="entryCount">0</div>
+      <div class="stat-label">JOURNAL ENTRIES LOGGED</div>
+    </div>
+    <div class="card">
+      <div class="stat-num" id="weeklyCount">0</div>
+      <div class="stat-label">WEEKLY REVIEWS WRITTEN</div>
+    </div>
+    <div class="card">
+      <div class="stat-num" id="customDrillCount">0</div>
+      <div class="stat-label">CUSTOM DRILLS BUILT</div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="two">
+    <div class="card">
+      <h3>Assets already on hand</h3>
+      <div class="tag-row">
+        <span class="chip">web dev</span><span class="chip">SEO</span><span class="chip">content creation</span>
+        <span class="chip">social media</span><span class="chip">lead gen basics</span><span class="chip">training discipline</span>
+        <span class="chip">learns by doing</span>
+      </div>
+      <p style="margin-top:14px">You've already shipped things — websites, a brand under Iron Corps, business names you've tried on. The gap isn't skill. It's turning scattered moves into one repeatable system.</p>
+    </div>
+    <div class="card">
+      <h3>The rule this manual runs on</h3>
+      <p class="callout" style="margin:0">Don't chase money before you understand money. Don't chase influence before you understand people. Don't chase a business before you can create value and say why it matters in one sentence.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+
+<script src="mp.js"></script>
+</body>
+</html>

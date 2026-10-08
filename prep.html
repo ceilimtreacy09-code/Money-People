@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>IRON PREP — TODAY</title>
+<link rel="stylesheet" href="prep.css">
+</head>
+<body>
+<div class="pagebar"><a href="index.html">MONEY &amp; PEOPLE</a><a href="hub.html">COMMAND HUB</a><a href="prep.html" class="cur" aria-current="page">IRON PREP</a></div>
+<div class="mast">
+  <div class="stamp"><span>FILE: <b>IRON PREP — ARMY / ARW TRAINING SYSTEM</b></span><span>STATUS: <b id="dateLine"></b></span></div>
+  <h1>Iron <em>Prep</em></h1>
+  <p>Daily structure, hard training, measurable benchmarks. Track it or it didn't happen.</p>
+</div>
+<nav id="nav"><a class="tabl cur" href="prep.html">TODAY</a><a class="tabl" href="prep-train.html">TRAIN</a><a class="tabl" href="prep-run.html">RUN</a><a class="tabl" href="prep-benchmarks.html">BENCHMARKS</a><a class="tabl" href="prep-data.html">DATA</a></nav>
+<main>
+<section id="today" class="tab on">
+  <span class="tag">DAILY ORDERS</span><h2>Today</h2>
+  <p class="lede">Score 75%+ and the day counts toward your streak. Water, protein and steps count automatically from what you log.</p>
+  <div class="grid">
+    <div class="card"><div class="num" id="score">0%</div><div class="lbl">TODAY'S SCORE</div><div class="meter"><div class="fill" id="scoreM"></div></div></div>
+    <div class="card"><div class="num" id="streak">0</div><div class="lbl">CURRENT STREAK</div></div>
+    <div class="card"><div class="num" id="best">0</div><div class="lbl">BEST STREAK</div></div>
+    <div class="card"><div class="num" id="wk">0</div><div class="lbl">SESSIONS THIS WEEK</div></div>
+  </div>
+  <div class="two" style="margin-bottom:20px">
+    <div class="card"><h3>Water</h3><div class="num" id="wTxt">0 / 3000 ml</div><div class="meter"><div class="fill" id="wM"></div></div>
+      <div class="row"><button class="a g" data-w="250">+250</button><button class="a g" data-w="500">+500</button><button class="a g" data-w="-250">−250</button></div></div>
+    <div class="card"><h3>Protein</h3><div class="num" id="pTxt">0 / 199 g</div><div class="meter"><div class="fill" id="pM"></div></div>
+      <div class="row"><input id="pIn" type="number" placeholder="grams" style="width:90px;margin:0"><button class="a g" id="pAdd">ADD</button><button class="a g" data-p="-1">UNDO LAST</button></div></div>
+  </div>
+  <div class="card" style="margin-bottom:20px"><h3>Steps</h3><div class="num" id="sTxt">0 / 15000</div><div class="meter"><div class="fill" id="sM"></div></div>
+    <div class="row"><input id="sIn" type="number" placeholder="today's total" style="width:140px;margin:0"><button class="a g" id="sSet">SET</button></div></div>
+  <div id="checks"></div>
+  <div class="callout">Discipline is doing it at 5:45 when you don't feel like it. Motivation was never the plan.</div>
+</section>
+</main>
+
+
+<script src="prep.js"></script>
+</body>
+</html>

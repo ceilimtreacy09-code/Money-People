@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MONEY &amp; PEOPLE — MONEY</title>
+<link rel="stylesheet" href="mp.css">
+</head>
+<body>
+<div class="pagebar"><a href="index.html" class="cur" aria-current="page">MONEY &amp; PEOPLE</a><a href="hub.html">COMMAND HUB</a><a href="prep.html">IRON PREP</a></div>
+<div class="masthead">
+  <div class="stampline">
+    <span>FILE: <b>MONEY &amp; PEOPLE — OPERATING SYSTEM</b></span>
+    <span>STATUS: <b id="statusLine">ACTIVE</b></span>
+  </div>
+  <h1>Money <em>&amp;</em> People</h1>
+  <p>A working manual for two skills nobody teaches you directly: how money actually moves, and how people actually think. Same discipline you bring to training — applied to cash flow and communication. Track it, drill it, review it weekly.</p>
+</div>
+<nav id="nav"><a class="tabl" href="index.html">DASHBOARD</a><a class="tabl cur" href="mp-money.html">MONEY</a><a class="tabl" href="mp-people.html">PEOPLE</a><a class="tabl" href="mp-business.html">BUSINESS</a><a class="tabl" href="mp-drills.html">DAILY DRILLS</a><a class="tabl" href="mp-log.html">AFTER-ACTION LOG</a><a class="tabl" href="mp-manual.html">FIELD MANUAL</a><a class="tabl" href="mp-data.html">DATA</a></nav>
+<main>
+<section id="money" class="tab active">
+  <span class="section-tag">MONEY ACADEMY</span>
+  <h2>How money actually works</h2>
+  <p class="lede">Not "get rich" content. The mechanics — so a wage, a client payment, or a bad purchase all get evaluated the same way.</p>
+
+  <div class="grid">
+    <div class="card">
+      <h3>1. The four jobs of every euro</h3>
+      <ol class="steps">
+        <li><b>Survive</b> — essentials: food, transport, phone, gear.</li>
+        <li><b>Protect</b> — a buffer so one bad week doesn't wreck you.</li>
+        <li><b>Grow</b> — skills and investments that compound.</li>
+        <li><b>Enjoy</b> — spending on things you actually value, on purpose.</li>
+      </ol>
+    </div>
+    <div class="card">
+      <h3>2. Income ≠ wealth</h3>
+      <p>Someone earning big and spending big can end up with nothing. Someone earning modestly and directing it well ends up ahead. Track:</p>
+      <p style="font-family:var(--mono); font-size:13px; color:var(--olive-bright)">income → fixed costs → variable costs → savings → investing → discretionary</p>
+    </div>
+    <div class="card">
+      <h3>3. Compounding is patience, not prediction</h3>
+      <p>Wealth is contributions + time + return, repeated without interruption. The lesson isn't "pick the right stock" — it's "don't stop showing up and don't withdraw early."</p>
+    </div>
+    <div class="card">
+      <h3>4. Status objects vs. assets</h3>
+      <p>A watch or a car can be a genuine reward. It's not automatically an asset. Ask: does this produce value, preserve value, or improve my ability to earn — or does it just burn cash?</p>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <h3 style="font-family:var(--serif); font-size:18px; margin-bottom:14px">Decision filters — run before you act</h3>
+  <div class="two">
+    <div class="card">
+      <h3>Before you spend</h3>
+      <p>Ask in order: need, useful, joy, status, impulse. If the honest answer is status or impulse — wait 24 hours before buying.</p>
+    </div>
+    <div class="card">
+      <h3>Before you invest</h3>
+      <p>What's the actual asset? What makes it fall? What fees or tax apply? What's your time horizon? Could you explain it to a mate in one paragraph?</p>
+    </div>
+  </div>
+
+  <div class="callout">A high income with no saving rate is a treadmill. A modest income with a real saving rate and time behind it is a flywheel.</div>
+
+  <div class="divider"></div>
+
+  <h3 style="font-family:var(--serif); font-size:18px; margin-bottom:14px">Quick budget snapshot</h3>
+  <p class="lede" style="margin-bottom:16px">A rough monthly split. Not saved — just a scratch calculator to sanity-check your numbers on the spot.</p>
+  <div class="card" style="max-width:480px">
+    <label class="field-label">MONTHLY INCOME (€)</label>
+    <input type="number" id="calcIncome" placeholder="e.g. 700">
+    <label class="field-label">FIXED COSTS (€)</label>
+    <input type="number" id="calcFixed" placeholder="e.g. 150">
+    <label class="field-label">SAVINGS/INVESTING TARGET (%)</label>
+    <input type="number" id="calcSavePct" placeholder="e.g. 20" value="20">
+    <button class="action ghost" id="calcRun">CALCULATE</button>
+    <div id="calcResult" style="margin-top:14px; font-family:var(--mono); font-size:13px; color:var(--olive-bright); white-space:pre-line"></div>
+  </div>
+</section>
+</main>
+
+
+<script src="mp.js"></script>
+</body>
+</html>

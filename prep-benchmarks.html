@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>IRON PREP — BENCHMARKS</title>
+<link rel="stylesheet" href="prep.css">
+</head>
+<body>
+<div class="pagebar"><a href="index.html">MONEY &amp; PEOPLE</a><a href="hub.html">COMMAND HUB</a><a href="prep.html" class="cur" aria-current="page">IRON PREP</a></div>
+<div class="mast">
+  <div class="stamp"><span>FILE: <b>IRON PREP — ARMY / ARW TRAINING SYSTEM</b></span><span>STATUS: <b id="dateLine"></b></span></div>
+  <h1>Iron <em>Prep</em></h1>
+  <p>Daily structure, hard training, measurable benchmarks. Track it or it didn't happen.</p>
+</div>
+<nav id="nav"><a class="tabl" href="prep.html">TODAY</a><a class="tabl" href="prep-train.html">TRAIN</a><a class="tabl" href="prep-run.html">RUN</a><a class="tabl cur" href="prep-benchmarks.html">BENCHMARKS</a><a class="tabl" href="prep-data.html">DATA</a></nav>
+<main>
+<section id="bench" class="tab on">
+  <span class="tag">ARW BENCHMARKS</span><h2>Test day</h2>
+  <p class="lede">Retest every 2 weeks, same conditions. Meters show you against the standard.</p>
+  <div class="grid" id="benchCards"></div>
+  <div class="card" style="max-width:520px">
+    <div class="f3"><div><label class="lbl">PULL-UPS</label><input id="bPull" type="number"></div><div><label class="lbl">PUSH-UPS</label><input id="bPush" type="number"></div><div><label class="lbl">SIT-UPS</label><input id="bSit" type="number"></div></div>
+    <div class="f3"><div><label class="lbl">3.2KM (mm:ss)</label><input id="bRun" type="text" placeholder="15:10"></div><div><label class="lbl">BODYWEIGHT kg</label><input id="bBw" type="number" step="0.1"></div></div>
+    <button class="a" id="bAdd">LOG TEST</button>
+  </div>
+  <h3 style="margin-top:24px">History</h3><div id="tests"></div>
+</section>
+</main>
+
+
+<script src="prep.js"></script>
+</body>
+</html>

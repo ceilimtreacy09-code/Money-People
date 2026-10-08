@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>IRON PREP — DATA</title>
+<link rel="stylesheet" href="prep.css">
+</head>
+<body>
+<div class="pagebar"><a href="index.html">MONEY &amp; PEOPLE</a><a href="hub.html">COMMAND HUB</a><a href="prep.html" class="cur" aria-current="page">IRON PREP</a></div>
+<div class="mast">
+  <div class="stamp"><span>FILE: <b>IRON PREP — ARMY / ARW TRAINING SYSTEM</b></span><span>STATUS: <b id="dateLine"></b></span></div>
+  <h1>Iron <em>Prep</em></h1>
+  <p>Daily structure, hard training, measurable benchmarks. Track it or it didn't happen.</p>
+</div>
+<nav id="nav"><a class="tabl" href="prep.html">TODAY</a><a class="tabl" href="prep-train.html">TRAIN</a><a class="tabl" href="prep-run.html">RUN</a><a class="tabl" href="prep-benchmarks.html">BENCHMARKS</a><a class="tabl cur" href="prep-data.html">DATA</a></nav>
+<main>
+<section id="data" class="tab on">
+  <span class="tag">BACKUP</span><h2>Your data</h2>
+  <p class="lede">Stored in this browser only. Clearing browser data wipes it, so export a backup regularly.</p>
+  <div class="two">
+    <div class="card"><h3>Export</h3><button class="a" id="exp">DOWNLOAD BACKUP</button></div>
+    <div class="card"><h3>Import</h3><input type="file" id="impF" accept="application/json"><button class="a g" id="imp">RESTORE</button><div id="impN" class="lbl" style="margin-top:8px"></div></div>
+  </div>
+  <div class="card" style="max-width:420px;margin-top:20px"><h3>Wipe everything</h3><button class="a d" id="wipe">WIPE ALL DATA</button></div>
+</section>
+</main>
+
+
+<script src="prep.js"></script>
+</body>
+</html>

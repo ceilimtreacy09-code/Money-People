@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>COMMAND HUB — DAILY LOG</title>
+<link rel="stylesheet" href="hub.css">
+</head>
+<body>
+<div class="pagebar"><a href="index.html">MONEY &amp; PEOPLE</a><a href="hub.html" class="cur" aria-current="page">COMMAND HUB</a><a href="prep.html">IRON PREP</a></div>
+<div class="mast">
+  <div class="stamp"><span>FILE: <b>COMMAND HUB — MONEY / SAVINGS / DAILY LOG</b></span><span>TODAY: <b id="dateLine"></b></span></div>
+  <h1>Command <em>Hub</em></h1>
+  <p>Where the money goes, what you saved, what you did today. One place, and links out to every page you run.</p>
+</div>
+<nav id="nav"><a class="tabl" href="hub.html">HUB</a><a class="tabl" href="hub-money.html">MONEY</a><a class="tabl" href="hub-savings.html">SAVINGS</a><a class="tabl cur" href="hub-log.html">DAILY LOG</a><a class="tabl" href="hub-data.html">DATA</a></nav>
+<main>
+<section id="log" class="tab on">
+  <span class="tag">DAILY LOG</span><h2>Today's record</h2>
+  <p class="lede">One entry per day. Saving again today edits it. Written at night, read on Sunday.</p>
+  <div class="two">
+    <div class="card"><h3>End-of-day log</h3>
+      <div class="f2"><div><label class="lbl">HOURS SLEPT</label><input id="lSleep" type="number" step="0.5"></div><div><label class="lbl">ENERGY (1–5)</label><div class="chips" id="eChips" style="margin-top:4px"></div></div></div>
+      <label class="lbl">WINS</label><textarea id="lWins"></textarea>
+      <label class="lbl">MISTAKES / LESSONS</label><textarea id="lLess"></textarea>
+      <label class="lbl">TOMORROW'S TOP 3</label><textarea id="lTop"></textarea>
+      <button class="a" id="lSave">SAVE TODAY'S LOG</button></div>
+    <div class="card"><h3>Task list</h3>
+      <div class="row" style="margin:0 0 10px"><input id="kText" type="text" placeholder="Add a task" style="margin:0;flex:1"><button class="a" id="kAdd">ADD</button></div>
+      <div id="tasks"></div><button class="a g" id="kClear" style="margin-top:8px">CLEAR COMPLETED</button></div>
+  </div>
+  <h3>Past entries</h3><div id="logs"></div>
+</section>
+</main>
+
+
+<script src="hub.js"></script>
+</body>
+</html>

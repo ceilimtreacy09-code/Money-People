@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>COMMAND HUB — SAVINGS</title>
+<link rel="stylesheet" href="hub.css">
+</head>
+<body>
+<div class="pagebar"><a href="index.html">MONEY &amp; PEOPLE</a><a href="hub.html" class="cur" aria-current="page">COMMAND HUB</a><a href="prep.html">IRON PREP</a></div>
+<div class="mast">
+  <div class="stamp"><span>FILE: <b>COMMAND HUB — MONEY / SAVINGS / DAILY LOG</b></span><span>TODAY: <b id="dateLine"></b></span></div>
+  <h1>Command <em>Hub</em></h1>
+  <p>Where the money goes, what you saved, what you did today. One place, and links out to every page you run.</p>
+</div>
+<nav id="nav"><a class="tabl" href="hub.html">HUB</a><a class="tabl" href="hub-money.html">MONEY</a><a class="tabl cur" href="hub-savings.html">SAVINGS</a><a class="tabl" href="hub-log.html">DAILY LOG</a><a class="tabl" href="hub-data.html">DATA</a></nav>
+<main>
+<section id="save" class="tab on">
+  <span class="tag">SAVINGS</span><h2>Goals</h2>
+  <p class="lede">Name what you're saving for and give it a target. Add money with the SAVE type in the MONEY tab and pick the goal.</p>
+  <div id="goals"></div>
+  <div class="card" style="max-width:480px"><h3>New goal</h3>
+    <div class="f2"><input id="gName" type="text" placeholder="e.g. Army kit fund"><input id="gTarget" type="number" placeholder="Target €"></div><button class="a" id="gAdd">ADD GOAL</button></div>
+</section>
+</main>
+
+
+<script src="hub.js"></script>
+</body>
+</html>

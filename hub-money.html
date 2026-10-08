@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>COMMAND HUB — MONEY</title>
+<link rel="stylesheet" href="hub.css">
+</head>
+<body>
+<div class="pagebar"><a href="index.html">MONEY &amp; PEOPLE</a><a href="hub.html" class="cur" aria-current="page">COMMAND HUB</a><a href="prep.html">IRON PREP</a></div>
+<div class="mast">
+  <div class="stamp"><span>FILE: <b>COMMAND HUB — MONEY / SAVINGS / DAILY LOG</b></span><span>TODAY: <b id="dateLine"></b></span></div>
+  <h1>Command <em>Hub</em></h1>
+  <p>Where the money goes, what you saved, what you did today. One place, and links out to every page you run.</p>
+</div>
+<nav id="nav"><a class="tabl" href="hub.html">HUB</a><a class="tabl cur" href="hub-money.html">MONEY</a><a class="tabl" href="hub-savings.html">SAVINGS</a><a class="tabl" href="hub-log.html">DAILY LOG</a><a class="tabl" href="hub-data.html">DATA</a></nav>
+<main>
+<section id="money" class="tab on">
+  <span class="tag">CASH FLOW</span><h2>Money in, money out</h2>
+  <p class="lede">Log everything, even the small stuff. Set a monthly limit per category and the meter tells you when you're over.</p>
+  <div class="grid">
+    <div class="card"><div class="num" id="mInc">€0</div><div class="lbl">INCOME THIS MONTH</div></div>
+    <div class="card"><div class="num" id="mSpend">€0</div><div class="lbl">SPENT THIS MONTH</div></div>
+    <div class="card"><div class="num" id="mSave">€0</div><div class="lbl">SAVED THIS MONTH</div></div>
+    <div class="card"><div class="num" id="mRate">0%</div><div class="lbl">SAVINGS RATE</div></div>
+  </div>
+  <div class="two">
+    <div class="card"><h3>Add transaction</h3>
+      <div class="chips" id="tChips"><button class="chip on" data-ty="spend">SPEND</button><button class="chip" data-ty="income">INCOME</button><button class="chip" data-ty="save">SAVE</button></div>
+      <div class="f2"><input id="tAmt" type="number" step="0.01" placeholder="€ amount"><input id="tDate" type="date"></div>
+      <select id="tCat"></select><input id="tNote" type="text" placeholder="Note (optional)"><button class="a" id="tAdd">ADD</button></div>
+    <div class="card"><h3>Monthly limits</h3><div id="budgets"></div></div>
+  </div>
+  <h3>Recent transactions</h3><div id="txs"></div>
+</section>
+</main>
+
+
+<script src="hub.js"></script>
+</body>
+</html>
